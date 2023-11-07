@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RIDES/static/css/main.7d4e4063.css",
-    "main.js": "/RIDES/static/js/main.1b66b492.js",
+    "main.js": "/RIDES/static/js/main.6d8941db.js",
     "static/js/787.c4e7f8f9.chunk.js": "/RIDES/static/js/787.c4e7f8f9.chunk.js",
     "static/media/Bike3.png": "/RIDES/static/media/Bike3.e8bd0645045f58f33dda.png",
     "static/media/Bike2.png": "/RIDES/static/media/Bike2.34c618abcabd3a4d6f25.png",
@@ -16,11 +16,11 @@
     "static/media/suzuki.jpg": "/RIDES/static/media/suzuki.a74426fe710f0f16ef42.jpg",
     "index.html": "/RIDES/index.html",
     "main.7d4e4063.css.map": "/RIDES/static/css/main.7d4e4063.css.map",
-    "main.1b66b492.js.map": "/RIDES/static/js/main.1b66b492.js.map",
+    "main.6d8941db.js.map": "/RIDES/static/js/main.6d8941db.js.map",
     "787.c4e7f8f9.chunk.js.map": "/RIDES/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d4e4063.css",
-    "static/js/main.1b66b492.js"
+    "static/js/main.6d8941db.js"
   ]
 }
