@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/RIDES/static/css/main.7d4e4063.css",
+    "main.js": "/RIDES/static/js/main.ed517802.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/RIDES/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/Bike3.png": "/RIDES/static/media/Bike3.e8bd0645045f58f33dda.png",
+    "static/media/Bike2.png": "/RIDES/static/media/Bike2.34c618abcabd3a4d6f25.png",
+    "static/media/profilebg2.jpg": "/RIDES/static/media/profilebg2.e2cad892610b22743c7a.jpg",
+    "static/media/Bike1.png": "/RIDES/static/media/Bike1.f96479da359ae2288ea4.png",
+    "static/media/loginbg2.jpg": "/RIDES/static/media/loginbg2.1f8ce71eb7abd95a5945.jpg",
+    "static/media/Bike11.jpg": "/RIDES/static/media/Bike11.1be56020dbbf32d49eac.jpg",
+    "static/media/profilebg.jpg": "/RIDES/static/media/profilebg.067f93fa2d277e8404f1.jpg",
+    "static/media/Rides.jpg": "/RIDES/static/media/Rides.7263ed3672c4a867c5a1.jpg",
+    "static/media/signupbg2.jpg": "/RIDES/static/media/signupbg2.50b0ab1db4648cc2035c.jpg",
+    "static/media/vespa.jpg": "/RIDES/static/media/vespa.eaac7c51618016ece684.jpg",
+    "static/media/suzuki.jpg": "/RIDES/static/media/suzuki.a74426fe710f0f16ef42.jpg",
+    "index.html": "/RIDES/index.html",
+    "main.7d4e4063.css.map": "/RIDES/static/css/main.7d4e4063.css.map",
+    "main.ed517802.js.map": "/RIDES/static/js/main.ed517802.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/RIDES/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d4e4063.css",
+    "static/js/main.ed517802.js"
+  ]
+}
