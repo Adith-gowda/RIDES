@@ -10,7 +10,7 @@ function Nav(props){
 
     const handleClick = (e) => {
         e.preventDefault();
-        window.location.href = "http://localhost:3000/#/bike/"+id+"/"+e.target.text;
+        window.location.href = "/bike/"+id+"/"+e.target.text;
     }
 
     return(

@@ -39,13 +39,13 @@ function EditProfile(){
         Axios.put("https://bike-showroom-backend.onrender.com/bikes/update-user/"+id,data)
         .then((res)=>{
             alert("record updated successfully");
-            window.location.href="http://localhost:3000/#/profile/"+id;
+            window.location.href="/profile/"+id;
         })
         .catch((err)=>{alert(err)});
     }
 
     const handleBack = () =>{
-        window.location.href="http://localhost:3000/#/profile/"+id;
+        window.location.href="/profile/"+id;
     }
 
     return(

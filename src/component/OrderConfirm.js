@@ -28,7 +28,7 @@ function OrderConfirm(){
     },[id])
 
     const handleCancel = () => {
-        window.location.href = "http://localhost:3000/#/Cart/"+id;
+        window.location.href = "/Cart/"+id;
     }
 
     const handleSubmit = () => {
@@ -37,7 +37,7 @@ function OrderConfirm(){
         Axios.post("https://bike-showroom-backend.onrender.com/bikes/addtoorder",{userid,productid})
         .then((res)=>{
             alert("Order Placed Successfully");
-            window.location.href = "http://localhost:3000/#/Profile/"+id;
+            window.location.href = "/Profile/"+id;
         }).catch((err)=>{
             console.log(err);
         })

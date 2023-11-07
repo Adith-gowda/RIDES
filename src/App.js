@@ -1,7 +1,7 @@
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Login from './component/login';
 import SignUp from './component/SignUp';
 import Home from './component/Home';
@@ -21,7 +21,7 @@ import OrderConfirm from './component/OrderConfirm';
 function App() {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/login-admin" element={<Adminlogin />} />
@@ -38,7 +38,7 @@ function App() {
           <Route path="/Profile/:id" element={<Profile/>} />
           <Route path="/editProfile/:id" element={<EditProfile/>} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

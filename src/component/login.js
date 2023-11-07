@@ -20,7 +20,7 @@ function Login(){
             else{
                 alert("Login successful");
                 const id = res.data;
-                window.location.href = "http://localhost:3000/#/Home/"+id;
+                window.location.href = "/Home/"+id;
             }
         }).catch((err)=>{
             console.log(err);
