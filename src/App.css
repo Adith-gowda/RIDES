@@ -1,38 +1,223 @@
-.App {
+.main-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-btn:hover {
+  background-color: #0056b3;
+  color: #fff; /* Change text color to white on hover */
+}
+.body1{
+    font-family: Arial, sans-serif;
+    background-image: url('./component/images/Bike11.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* This property ensures the image covers the entire body */
+    background-position: center center; /* This property centers the background image */
+    background-repeat: no-repeat; /* This property prevents the image from repeating */
+     /* This property fixes the background image so it doesn't scroll with the content */
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    margin: 0;
+}
+
+.profile1{
+  font-family: Arial, sans-serif;
+  background-image: url('./component/images/profilebg2.jpg'); /* Specify the path to your background image */
+  background-size: cover; /* This property ensures the image covers the entire body */ /* This property centers the background image */
+  background-repeat: no-repeat; /* This property prevents the image from repeating */
+  height: 90vh;
+  opacity: 2.0;
+  margin: 0;
+}
+
+.profile2{
+  font-family: Arial, sans-serif;
+  background-image: url('./component/images/profilebg.jpg'); /* Specify the path to your background image */
+  background-size: cover; /* This property ensures the image covers the entire body */ /* This property centers the background image */
+  background-repeat: no-repeat; /* This property prevents the image from repeating */
+   /* This property fixes the background image so it doesn't scroll with the content */
+  height: 90vh;
+  margin: 0;
+}
+
+.container1{
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.point {
+    margin-bottom: 20px;
+}
+
+.footer_wrapper{
+  background-color: var(--bg-black);
+}
+
+.footer_wrapper h5{
+  color: var(--text-white);
+  margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li{
+  margin-bottom: .5rem;
+  list-style: none;
+}
+
+.footer_wrapper .contact-info li a{
+  color: var(--secondary-color);
+}
+
+.footer_wrapper .link-widget li a,
+.footer_wrapper p{
+  color: var(--text-gray);
+  font-size: .875rem;
+  padding-left: 1.5rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.footer_wrapper .link-widget li a:before{
+  content: '\f105';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.footer_wrapper .link-widget li a:hover{
+  color: var(--secondary-color);
+  margin-left: .625rem;
+}
+
+.footer_wrapper .social-network a{
+  width: 2.1875rem;
+  height: 2.1875rem;
+  margin: .5rem;
+  line-height: 2rem;
+  font-size: .875rem;
+  display: inline-block;
+  border: .125rem solid var(--text-gray);
+  color: var(--text-gray);
+  text-align: center;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footer_wrapper .social-network a:hover{
+  cursor: pointer;
+  outline: none;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-white);
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 .625rem .9375rem 0 rgb(0 0 0 / 10%);
+}
+
+.footer_wrapper .form-control:focus{
+  outline: none;
+  box-shadow: none;
+  border-color: var(--secondary-color);
+}
+
+.footer_wrapper .copyright-section{
+  background-color: var(--primary-color);
+  padding: 1.25rem 0 .3125rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer_wrapper .copyright-section a{
+  color: var(--secondary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card1 {
+  width: 465px;
+  background: #FFFFFF;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title1 {
+  width: 100%;
+  height: 40px;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #efeff3;
+  font-weight: 700;
+  font-size: 11px;
+  color: #63656b;
+}
+
+/* Checkout */
+.checkout {
+  border-radius: 9px 9px 19px 19px;
+}
+
+.checkout .details {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px;
+  gap: 5px;
+}
+
+.checkout .details span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.checkout .details span:nth-child(odd) {
+  font-size: 11px;
+  font-weight: 700;
+  color: #707175;
+  margin: auto auto auto 0;
+}
+
+.checkout .details span:nth-child(even) {
+  font-size: 13px;
+  font-weight: 600;
+  color: #47484b;
+  margin: auto 0 auto auto;
+}
+
+.checkout .checkout--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px;
+  background-color: #efeff3;
+}
+
+.checkout .checkout-btn {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  width: 150px;
+  height: 36px;
+  background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+  box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 7px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
