@@ -22,11 +22,11 @@ function SignUp(){
         .then((res)=>{
             if(res.data==="user already exists"){
                 alert("User already exists");
-                window.location.href = "http://localhost:3000";
+                window.location.href = "/";
             }
             else{
                 alert("Signup successful");
-                window.location.href = "http://localhost:3000";
+                window.location.href = "/";
             }
         }).catch((err)=>{
             console.log(err);

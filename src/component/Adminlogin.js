@@ -21,7 +21,7 @@ function Adminlogin(){
             else{
                 alert("Admin Login successful");
                 const id = res.data;
-                window.location.href = "http://localhost:3000/Admin/"+id;
+                window.location.href = "/Admin/"+id;
             }
         }).catch((err)=>{
             console.log(err);
