@@ -73,7 +73,7 @@ function AdminHome(){
 
         <div class="container-lg pt-5">
             <div class="row justify-content-center">
-                <div class="col-4 pt-4 px-4 border-bottom border-secondary border-2" style={{backgroundColor: "rgba(222, 220, 220, 0.427)"}}>
+                <div class="col-lg-4 col-md-7 pt-4 px-4 border-bottom border-secondary border-2" style={{backgroundColor: "rgba(222, 220, 220, 0.427)"}}>
                     <form class="form" onSubmit={handleSubmit}>
                         <div class="title d-flex justify-content-center mb-2 fw-bold" style={{fontSize: "2em",fontFamily: 'Times New Roman, Times, serif'}}>Bike/Scooter Data</div>
 

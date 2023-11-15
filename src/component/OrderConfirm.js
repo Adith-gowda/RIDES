@@ -49,9 +49,9 @@ function OrderConfirm(){
         <div class="container-lg">
             <div class="row justify-content-center" style={{height:"700px"}}>
                 <div class="col-lg-10" style={{backgroundColor:"#e8e6e6"}}>
-                    <div class="d-flex justify-content-between px-5 bg-secondary text-light" style={{fontFamily:"Times News Roman"}}>
-                        <div class="display-6"><i class="bi bi-check-circle-fill"></i> Order Confirmation Page</div>
-                        <div class="btn btn-danger fw-bold" onClick={handleCancel}>Cancel</div>
+                    <div class="d-flex justify-content-between px-1 bg-secondary text-light" style={{fontFamily:"Times News Roman"}}>
+                        <div class="display-6 my-3"><i class="bi bi-check-circle-fill"></i> Order Confirmation Page</div>
+                        <div class="btn btn-danger fw-bold my-3 text-center" onClick={handleCancel}>Cancel</div>
                     </div>
                     <div class="row justify-content-center px-3">
                         <div className="card col-lg-6 my-4 py-3">
@@ -87,7 +87,7 @@ function OrderConfirm(){
                                     <hr/>
                                 </div> 
 
-                                <div class="card1 checkout">
+                                <div class="container-sm card1 checkout">
                                     <label class="title1">Checkout</label>
                                     <div class="details">
                                         <span>Your cart subtotal:</span>

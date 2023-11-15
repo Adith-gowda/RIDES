@@ -41,8 +41,10 @@ function CartList(props) {
                     <code className="card-text title">{`>>`} Kmpl: {bikedata.kmpl}</code><br/>
                     <code className="card-text title">{`>>`} CC: {bikedata.bikecc}</code><br/>
                     <cite className="card-text title"><i class="bi bi-bookmark-fill"> {bikedata.description}</i></cite><br/>
-                    <Link to={"/orderConfirmation/"+bikedata._id+"/"+props.id}><div className="btn btn-secondary mt-3 mx-4" id={bikedata._id}>Buy Now <i class="bi bi-bag-fill"></i></div></Link>
-                    <div onClick={handleDelete} className="btn btn-danger mt-3 ms-2" id={bikedata._id}>Delete <i class="bi bi-trash"></i></div  >
+                    <center>
+                        <Link to={"/orderConfirmation/"+bikedata._id+"/"+props.id}><div className="btn btn-secondary mt-3" id={bikedata._id}>Buy Now <i class="bi bi-bag-fill"></i></div></Link>
+                        <div onClick={handleDelete} className="btn btn-danger mt-3 mx-2 lg-ms-2 md-ms-0 sm-ms-0" id={bikedata._id}>Delete <i class="bi bi-trash"></i></div>
+                    </center>
                 </div>
             </div>
         </div>

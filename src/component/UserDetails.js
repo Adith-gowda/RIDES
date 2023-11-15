@@ -51,67 +51,62 @@ function UserDetails(){
             {
                 userdata.map((user)=>{
                     return (
-                        <div class="container-fluid my-5">
+                        <div class="container-lg my-5">
                             <div class="row justify-content-center">
-                                <div class="col-8 pt-3 px-4 border border-secondary border-1 mb-4" style={{backgroundColor: "rgba(222, 220, 220, 0.427)"}}>
-                                    <table class="table table-stripped text-left" cellPadding={20} style={{backgroundColor:"#fcfcfc"}}>
-                                        <tr>
-                                            <td><i class="bi bi-person-fill"></i>Username</td>
-                                            <td>: {user.username}</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-envelope-fill"></i>Email</td>
-                                            <td>: {user.email}</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-telephone-fill"></i>Phone No.</td>
-                                            <td>: {user.phoneNo}</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-house-fill"></i>Address</td>
-                                            <td>: {user.address}</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-pin-map-fill"></i>Pincode</td>
-                                            <td>: {user.pincode}</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-heart-fill"></i>Wishlist</td>
-                                            <td>: {user.wishlist.length} count</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-cart-fill"></i>Cart</td>
-                                            <td>: {user.cart.length} count</td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="bi bi-bag-fill"></i>Orders</td>
-                                            <td>: {user.order.length} count</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><i class="bi bi-caret-right-fill"></i>Ordered vehicles<i class="bi bi-caret-left-fill"></i></td>
-                                            <td>{user.order.length ===0? <div>Not yet ordered anything</div>:
-                                            <span>
-                                                {
-                                                    user.order.map((vehicle)=>{
-                                                        return <div>Vehicle Id : {vehicle}</div>
-                                                    })
-                                                } 
-                                            </span>       
-                                        }</td>
-                                        </tr>
-                                        <tr>
-                                            <td colSpan={2} class="text-center">
-                                                <div className="btn btn-danger"  id={user._id} onClick={handleDelete}><i class="bi bi-box-arrow-left"></i> Delete this User</div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <div class="col-md-6 py-4 px-4 mb-5 border border-secondary border-1" style={{backgroundColor: "rgba(222, 220, 220, 0.7)"}}>
+                                    <form>
+                                        <div class="form-group my-2">
+                                            <label for="username" class="fw-bold bi bi-person-circle"> Username :</label>
+                                            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" defaultValue={user.username} readOnly />
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="email" class="fw-bold bi bi-envelope-fill"> Email :</label>
+                                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" defaultValue={user.email} readOnly/>
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="phoneno" class="fw-bold bi bi-telephone-fill"> PhoneNo :</label>
+                                            <input type="text" class="form-control" id="phoneno" defaultValue={user.phoneNo} readOnly />
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="address" class="fw-bold bi bi-geo-alt-fill"> Address :</label>
+                                            <textarea type="text" class="form-control" id="address" aria-describedby="addressHelp" defaultValue={user.address} readOnly/>
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="pincode" class="fw-bold bi bi-geo-fill"> Pincode :</label>
+                                            <input type="text" class="form-control" id="pincode" aria-describedby="pincodeHelp" defaultValue={user.pincode} readOnly/>
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="pincode" class="fw-bold bi bi-heart-fill"> WishList :</label>
+                                            <input type="text" class="form-control" id="pincode" aria-describedby="pincodeHelp" defaultValue={user.wishlist.length + " count"} readOnly/>
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="pincode" class="fw-bold bi bi-cart-fill"> Cart :</label>
+                                            <input type="text" class="form-control" id="pincode" aria-describedby="pincodeHelp" defaultValue={user.cart.length + " count"} readOnly/>
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="pincode" class="fw-bold bi bi-bag-check-fill"> Orders :</label>
+                                            <input type="text" class="form-control" id="pincode" aria-describedby="pincodeHelp" defaultValue={user.order.length + " count"} readOnly/>
+                                        </div>
+                                        <div class="form-group my-1 text-center">
+                                            <label for="pincode" class="fw-bold">Ordered Vehicles :</label>
+                                            {user.order.length ===0? <div>Not yet ordered anything</div>:
+                                                <span>
+                                                    {
+                                                        user.order.map((vehicle)=>{
+                                                            return <div>Vehicle ID : {vehicle}</div>
+                                                        })
+                                                    } 
+                                                </span>       
+                                            }
+                                            <div className="btn btn-danger my-2"  id={user._id} onClick={handleDelete}><i class="bi bi-box-arrow-left"></i> Delete this User</div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     )
                 })
             }
-            
         </div>
     )
 }

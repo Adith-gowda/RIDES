@@ -49,38 +49,36 @@ function Profile(){
     return(
         <div class="bg-dark">
             <Nav id={id} username={username}/>
-            <div class="container-fluid mb-5 profile1 pt-5" style={{fontFamily:"Times"}}>
+            <div class="container-fluid mb-5 profile1 py-5" style={{fontFamily:"Times"}}>
                 <div class="row justify-content-center">
-                <div class="title d-flex justify-content-center mb-2" style={{fontSize: "2em",fontFamily: 'Times'}}><span class="bi bi-person-circle fw-bold text-dark"> Profile</span></div>
-                    <div class="col-8 pt-4 px-4 border border-secondary border-1 " style={{backgroundColor: "rgba(222, 220, 220, 0.427)"}}>
-                        <table class="table table-stripped" cellPadding={20} style={{backgroundColor:"#fcfcfc"}}>
-                            <tr>
-                                <td><i class="bi bi-person-fill"></i>Username</td>
-                                <td>: {username}</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-envelope-fill"></i>Email</td>
-                                <td>: {email}</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-telephone-fill"></i>Phone No.</td>
-                                <td>: {phoneNo}</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-geo-alt-fill"></i>Address</td>
-                                <td>: {address}</td>
-                            </tr>
-                            <tr>
-                                <td><i class="bi bi-geo-fill"></i>Pincode</td>
-                                <td>: {pincode}</td>
-                            </tr>
-                            <tr>
-                                <td colSpan={2} class="text-center">
-                                    <Link to="/"><div className="btn btn-primary"><i class="bi bi-box-arrow-left"></i> Log Out</div></Link>
-                                    <Link to={"/editProfile/"+id}><div className="btn btn-secondary"><i class="bi bi-pencil-square"></i> Edit Profile</div></Link>
-                                </td>
-                            </tr>
-                        </table>
+                    <div class="col-md-6 pt-4 px-4 border border-secondary border-1" style={{backgroundColor: "rgba(222, 220, 220, 0.7)"}}>
+                        <form>
+                            <div class="title d-flex justify-content-center mb-2 text-dark h2"><span class="bi bi-person-circle fw-bold"> Profile</span></div>
+                            <div class="form-group my-1">
+                                <label for="username" class="fw-bold bi bi-person-fill"> Username :</label>
+                                <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" defaultValue={username} readOnly />
+                            </div>
+                            <div class="form-group my-1">
+                                <label for="email" class="fw-bold bi bi-envelope-fill"> Email :</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" defaultValue={email} readOnly />
+                            </div>
+                            <div class="form-group my-1">
+                                <label for="phoneno" class="fw-bold bi bi-telephone-fill"> PhoneNo :</label>
+                                <input type="text" class="form-control" id="phoneno" defaultValue={phoneNo} readOnly />
+                            </div>
+                            <div class="form-group my-1">
+                                <label for="address" class="fw-bold bi bi-geo-alt-fill"> Address :</label>
+                                <textarea type="text" class="form-control" id="address" aria-describedby="addressHelp" defaultValue={address} readOnly />
+                            </div>
+                            <div class="form-group my-1">
+                                <label for="pincode" class="fw-bold bi bi-geo-fill"> Pincode :</label>
+                                <input type="text" class="form-control" id="pincode" aria-describedby="pincodeHelp" defaultValue={pincode} readOnly />
+                            </div>
+                            <center class="my-3">
+                                <Link to="/"><div className="btn btn-danger me-3 my-md-0 my-2"><i class="bi bi-box-arrow-left"></i> Log Out</div></Link>
+                                <Link to={"/editProfile/"+id}><div className="btn btn-secondary"><i class="bi bi-pencil-square"></i> Edit Profile</div></Link>
+                            </center>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -57,8 +57,10 @@ function WishListDetails(props) {
                     <code className="card-text title">{`>>`} Kmpl: {bikedata.kmpl}</code><br/>
                     <code className="card-text title">{`>>`} CC: {bikedata.bikecc}</code><br/>
                     <cite className="card-text title"><i class="bi bi-bookmark-fill"> {bikedata.description}</i></cite><br/>
-                    <div onClick={handleCart} className="btn btn-secondary mt-3 mx-4" id={bikedata._id}>Add to <i class="bi bi-cart4"></i></div>
-                    <div onClick={handleDelete} className="btn btn-danger mt-3 ms-2" id={bikedata._id}>Delete <i class="bi bi-trash"></i></div  >
+                    <center>
+                        <div onClick={handleCart} className="btn btn-secondary mt-3" id={bikedata._id}>Add to <i class="bi bi-cart4"></i></div>
+                        <div onClick={handleDelete} className="btn btn-danger mt-3 mx-2 lg-ms-2 md-ms-0 sm-ms-0" id={bikedata._id}>Delete <i class="bi bi-trash"></i></div>
+                    </center>
                 </div>
             </div>
         </div>

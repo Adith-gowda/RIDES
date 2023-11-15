@@ -66,8 +66,10 @@ function BikeList(props){
                                         <code className="card-text title">{`>>`} Kmpl: {item.kmpl}</code><br/>
                                         <code className="card-text title">{`>>`} CC: {item.bikecc}</code><br/>
                                         <cite className="card-text title"><i class="bi bi-bookmark-fill"> {item.description}</i></cite><br/>
-                                        <div onClick={handleCart} className="btn btn-secondary mt-3 mx-4" id={item._id}>Add to <i class="bi bi-cart4"></i></div>
-                                        <div onClick={handleWishlist} className="btn btn-danger mt-3 ms-2" id={item._id}>Add to <i class="bi bi-heart"></i></div  >
+                                        <center>
+                                        <div onClick={handleCart} className="btn btn-secondary mt-3" id={item._id}>Add to <i class="bi bi-cart4"></i></div>
+                                        <div onClick={handleWishlist} className="btn btn-danger mt-3 mx-2 lg-ms-2 md-ms-0 sm-ms-0" id={item._id}>Add to <i class="bi bi-heart"></i></div  >
+                                        </center>
                                     </div>
                                 </div>
                             </div>

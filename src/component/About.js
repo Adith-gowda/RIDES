@@ -25,29 +25,45 @@ function About() {
     return(
         <div>
             <Nav id={id} username={username}/>
-            <div class="body1 pt-2" style={{fontFamily:"Times New Roman"}}>
-                <title>Our Showroom</title>
-                <div class="container1">
-                    <h1>Welcome to Our Showroom</h1>
+            <div class="body1" style={{fontFamily:"Times New Roman"}}>
+                <div class="container-lg py-3">
+                    <div class="row" style={{opacity:"0.8"}}>
+                        <center>
+                        <div class="col-md-8 col-lg-10 mt-2 mb-lg-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-decoration-underline">Welcome to Our Showroom</h5>
+                                    <p class="card-text">A Haven for Automobile Enthusiasts! Nestled in the heart of the city, our showroom stands as a testament to luxury, innovation, and elegance in the world of automobiles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-10 mt-2 mb-lg-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-decoration-underline">A World of Choices</h5>
+                                    <p class="card-text">From sleek sedans to robust SUVs and cutting-edge electric vehicles, our showroom boasts an extensive collection that caters to every taste and preference.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="point">
-                        <h2>A Haven for Automobile Enthusiasts!</h2>
-                        <p>Nestled in the heart of the city, our showroom stands as a testament to luxury, innovation, and elegance in the world of automobiles. As you step inside, you are greeted by a symphony of gleaming cars, each a masterpiece in its own right. Our showroom is not just a place to buy vehicles; its an experience, a journey through the latest and most coveted models from renowned manufacturers around the globe.</p>
-                    </div>
+                        <div class="col-md-8 col-lg-10 mt-2 mb-lg-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-decoration-underline">Expert Guidance</h5>
+                                    <p class="card-text">Our knowledgeable and friendly staff are more than just salespeople; they are automotive enthusiasts who understand the intricacies of each vehicle on display.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="point">
-                        <h2>A World of Choices</h2>
-                        <p>From sleek sedans to robust SUVs and cutting-edge electric vehicles, our showroom boasts an extensive collection that caters to every taste and preference. Immerse yourself in the scent of new leather and the sheen of polished metal as you explore the showroom floor. Each vehicle is a marvel of engineering, promising comfort, performance, and style in equal measure.</p>
-                    </div>
-
-                    <div class="point">
-                        <h2>Expert Guidance</h2>
-                        <p>Our knowledgeable and friendly staff are more than just salespeople; they are automotive enthusiasts who understand the intricacies of each vehicle on display. They are dedicated to providing you with comprehensive information, guiding you through the features and options, and ensuring you make an informed decision tailored to your needs.</p>
-                    </div>
-
-                    <div class="point">
-                        <h2>Visit Us Today</h2>
-                        <p>Whether youre a car enthusiast, a first-time buyer, or someone simply seeking automotive inspiration, our showroom invites you to embark on a captivating journey. Come and witness the epitome of automotive excellence, where passion meets precision, and where every vehicle tells a story of craftsmanship and performance. Join us at our showroom, where dreams are realized, and the road ahead is paved with excitement and unparalleled driving experiences.</p>
+                        <div class="col-md-8 col-lg-10 mt-2 mb-lg-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-decoration-underline">Visit Us Today</h5>
+                                    <p class="card-text">Whether youre a car enthusiast, a first-time buyer, or someone seeking automotive inspiration, our showroom invites you to embark on a captivating journey.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </center>
                     </div>
                 </div>
             </div>

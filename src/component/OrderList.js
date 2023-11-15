@@ -41,7 +41,7 @@ function OrderList(props){
                                 <h6 className="card-text"><i class="bi bi-envelope-fill"></i> : {props.email}</h6>
                                 <h6 className="card-text"><i class="bi bi-telephone-fill"></i> : {props.phoneNo}</h6>
                                 <h6 className="card-text"><i class="bi bi-geo-fill"></i>  : {props.pincode}</h6>
-                                <h6 className="card-text"><i class="bi bi-geo-alt-fill"></i> {props.address}</h6>
+                                <h6 className="card-text"><i class="bi bi-geo-alt-fill"></i> : {props.address}</h6>
                                 <hr/>
                                 <div>
                                     <h4 className="card-title text-center text-decoration-underline">Delivery Details</h4>
@@ -56,7 +56,7 @@ function OrderList(props){
                                     <hr/>
                                 </div> 
 
-                                <div class="card1 checkout">
+                                <div class=" container-sm card1 checkout">
                                     <label class="title1">Checkout</label>
                                     <div class="details">
                                         <span>Your cart subtotal:</span>

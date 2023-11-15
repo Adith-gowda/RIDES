@@ -76,6 +76,7 @@ function Home(){
                     </div>
                 </div>
             </div>
+            <div class="text-light text-center">Scroll Down <i class="bi bi-arrow-down"></i></div>
             <hr class="border"/>
             <section id="price" class="price_wrapper mt-5" style={{fontFamily:"Times New Roman"}}>
                 <section id="price" class="price_wrapper">

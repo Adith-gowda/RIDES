@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Axios from "axios";
-import loginbg from "./images/loginbg2.jpg";
+import loginbg from "./images/loginbg3.webp";
 function Adminlogin(){
 
     const [adminemail, setEmail] = useState("");
@@ -42,9 +42,9 @@ function Adminlogin(){
 
     return(
         <div style={divStyle}>
-        <div class="container-lg pt-5" style={{position:"relative", left:"-250px", top:"100px"}}>
+        <div class="container-lg pt-5">
             <div class="row justify-content-center">
-                <div class="col col-sm-3 pt-4 px-4 border-bottom border-secondary border-2" style={{backgroundColor: "rgba(222, 220, 220, 0.427)"}}>
+                <div class="col-lg-4 col-md-5 col-sm-6 pt-4 px-4 border-bottom border-secondary border-2" style={{backgroundColor: "rgba(222, 220, 220, 0.427)"}}>
                     <form class="form" onSubmit={handleSubmit}>
                         <div class="title d-flex justify-content-center mb-2 fw-bold" style={{fontSize: "2em",fontFamily: 'Times New Roman, Times, serif'}}>Admin Login</div>
                         <div class="mb-3 input-group">
