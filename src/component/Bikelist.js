@@ -56,7 +56,7 @@ function BikeList(props){
                 <div className="row">
                     {props.data.map((item)=>{
                         return(
-                            <div className="col-lg-3 col-md-6 my-2" >
+                            <div className="col-lg-3 col-md-6 mb-3" >
                                 <div className="card">
                                     <img src={item.image} className="card-img-top" alt={item.bikename} />
                                     <div className="card-body">

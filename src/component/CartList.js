@@ -31,7 +31,7 @@ function CartList(props) {
     }
     
     return (
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 mb-3">
             <div className="card">
                 <img src={bikedata.image} className="card-img-top" alt={bikedata.bikename} />
                 <div className="card-body">
