@@ -72,7 +72,7 @@ function OrderConfirm(){
                                 <h6 className="card-text"><i class="bi bi-envelope-fill"></i> : {userdata.email}</h6>
                                 <h6 className="card-text"><i class="bi bi-telephone-fill"></i> : {userdata.phoneNo}</h6>
                                 <h6 className="card-text"><i class="bi bi-geo-fill"></i>  : {userdata.pincode}</h6>
-                                <h6 className="card-text"><i class="bi bi-geo-alt-fill"></i> {userdata.address}</h6>
+                                <h6 className="card-text"><i class="bi bi-geo-alt-fill"></i> : {userdata.address}</h6>
                                 <hr/>
                                 <div>
                                     <h4 className="card-title text-center text-decoration-underline">Delivery Details</h4>
