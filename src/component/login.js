@@ -53,7 +53,7 @@ function Login(){
                                     <i class="bi bi-person-fill"></i>
                                 </span>
                             </span>
-                            <input type="text" class="form-control" id="email" placeholder="Email" style={{borderRadius: "0"}} onChange={(event)=>setEmail(event.target.value)} required/>
+                            <input type="email" class="form-control" id="email" placeholder="Email" style={{borderRadius: "0"}} onChange={(event)=>setEmail(event.target.value)} required/>
                         </div>
                         <div class="mb-3 input-group">
                             <span class="input-group-text" style={{borderRadius: "0"}}>
